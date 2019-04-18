@@ -2,7 +2,7 @@
 
 ## Frame
 - Es gibt zwei Klassen von Objekten: *Flugzeug* und *Projektil*.
-- Aus *Fugzeug* erben sowohl das Spieler-Flugzeug und die KI ihre Objekte.
+- Aus *Flugzeug* erben sowohl das Spieler-Flugzeug und die KI ihre Objekte.
 - Betreffende Attribute (Koordinaten, Lebenspunkte, Stats, ...) sollten provisorisch hinzugefügt werden.
 - Ein Loop überprüft bei *Flugzeug* ob die Lebenspunkte auf 0 gefallen sind.
 
@@ -11,7 +11,7 @@
 - Der Spieler sieht immer in Richtung Osten.
 - Kollision mit Bildschirm, verhindert dass der Spieler aus dem Spielbereich gerät. 
 - Die Größe des Spielers ist variable (für Grafiken).
-- Die Bewegung ist statisch und hängt nicht nach, sobald man das Steuerkreut loskreuzt.
+- Die Bewegung ist statisch und hängt nicht nach, sobald man das Steuerkreuz loslässt.
 
 ## Schießen 
 - Der Spieler kann mit dem *A-Knopf* ein *Projektil* abfeuern, der Richtung Osten fliegt.
@@ -21,18 +21,18 @@
 - Beim Abschuss des *Projektils* wird ein Sound abgespielt (Platzhaltersounds reichen vorerst).
 
 ## Gegner (Kollision)
-- Der Spieler kann mit statischen Gegner kollidieren.
+- Der Spieler kann mit statischen Gegnern kollidieren.
 - Bei Kollision werden beide Flugzeuge zerstört, in dem ihre Lebenspunkte auf 0 fallen.
 - Die Animation soll austauschbar sein.
 
 ## Gegner (Schießen)
 - Die Gegner sind in der Lage in einem zufälligen Zeitraum *Projektile* abzufeuern, welche Richtung Westen fliegen.
 - Diese haben alle Verhaltensweisen wie die *Projektile* des Spielers.
-- Wenn ein *Projektil* ein Objekt *Flugzeug* trifft reduziert es die Lebenspunkte um einen provisorischen Wert.
+- Wenn ein *Projektil* ein Objekt *Flugzeug* trifft, reduziert es die Lebenspunkte um einen provisorischen Wert.
 - Bei Kollision mit einem Objekt *Flugzeug* wird das Projektil zerstört.
 
 ## Projektile & Zerstörung
-- Bei Abschuss eines *Projektils* speichert das Projektil ob es der Spieler oder der Computer abgefeuert hat.
+- Bei Abschuss eines *Projektils* speichert das Projektil, ob es der Spieler oder der Computer abgefeuert hat.
 - Bei Zerstörung (Lebenspunkte auf 0) eines Gegners durch den Spieler wird ein gelb-roter Lichteffekt abgespielt.
 - Bei der Zerstörung eines Flugzeugs soll eine provisorische Animation abgespielt werden.
 - Sobald der Spieler zerstört wird, startet das Spiel von neuem.
@@ -41,13 +41,13 @@
 ## Gegner (Bewegung)
 - Die Gegner bewegen sich automatisch in Richtung Osten.
 - Sie sollen sich nicht vertikal bewegen, da sonst die Gefahr besteht, dass sie sich gegenseitig treffen.
-- Wenn die Gegner den Bildschirm verlassen werden sie zerstört.
+- Wenn die Gegner den Bildschirm verlassen, werden sie zerstört.
 
 ## Statistiken
-- Beim Zerstören eines Gegner durch ein *Projektil* des Spielers wird eine Variable *Punkte* erhöht.
+- Beim Zerstören eines Gegners durch ein *Projektil* des Spielers wird eine Variable *Punkte* erhöht.
 - Die Punkte werden als Zahl angezeigt.
-- Die *Rüstung* des Spielers werden in Form eines Schild-Icons und einem Balken angezeigt.
-- Eine neue Variable *Munition* wird in Form eines Patronen-Icons und einem Balken angezeigt.
+- Die *Rüstung* des Spielers wird in Form eines Schild-Icons und mit einem Balken angezeigt.
+- Eine neue Variable *Munition* wird in Form eines Patronen-Icons und mit einem Balken angezeigt.
 
 ## Munitions-Mechanik
 - Mit jedem Schuss sinkt die Munition.
